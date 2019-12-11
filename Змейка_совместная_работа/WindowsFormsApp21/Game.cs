@@ -131,6 +131,71 @@ namespace WindowsFormsApp21
             myPB.Refresh();
         }
 
+        public bool Move(int key)
+        {
+            bool a = true;
+            switch (key)//key отвечат з направление движения
+            {
+                case 1://вверх
+                    my_snake.move(0, -1);
+                    break;
+                case 2:
+                    my_snake.move(0, 1);
+                    break;//вниз
+                case 3://право
+                    my_snake.move(1, 0);
+                    break;
+                case 4://лево
+                    my_snake.move(-1, 0);
+                    break;
+            }
+            EdaCollision();
+            a = Crush();
+            if (a == true)
+            {
+                Show();
+            }
+            return a;
+        }
 
+        public void EdaCollision()
+        {
+            for (int i = 0; i < my_food.body.Count; i++)
+            {
+                if (my_food.body[i].x == my_snake.body[0].x &&
+                    my_food.body[i].y == my_snake.body[0].y)
+                {
+                    Proverka_food();
+                    my_food.delete(i);//удаление сьеденной еды
+                    my_snake.AddHvost();//добавление длины змейке
+                    count++;
+                }
+            }
+        }
+
+
+        public bool Crush()
+        {
+            bool f = true;
+            for (int i=0;i< my_blok.body.Count; i++)
+            {
+                if (my_blok.body[i].x==my_snake.body[0].x &&
+                    my_blok.body[i].y == my_snake.body[0].y)
+                {
+                    f = false;
+                    break;
+                }
+            }
+            for (int i = 1; i < my_snake.body.Count; i++)
+            {
+                if (my_snake.body[i].x == my_snake.body[0].x &&
+                    my_snake.body[i].y == my_snake.body[0].y)
+                {
+                    f = false;
+                    break;
+                }
+            }
+            return f;
+        }
     }
 }

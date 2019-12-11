@@ -31,5 +31,9 @@ namespace WindowsFormsApp21
             }*/
             return a;
         }
+        public void delete(int k)
+        {
+            body.RemoveAt(k);
+        }
     }
 }

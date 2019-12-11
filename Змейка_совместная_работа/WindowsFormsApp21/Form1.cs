@@ -31,5 +31,42 @@ namespace WindowsFormsApp21
             test.Show();
 
         }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            if (test.Move(1) == false)
+            {
+                MessageBox.Show("Конец игры!");
+            }
+            label1.Text = test.count.ToString();
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            if (test.Move(2) == false)
+            {
+                MessageBox.Show("Конец игры!");
+            }
+            label1.Text = test.count.ToString();
+
+        }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            if (test.Move(3) == false)
+            {
+                MessageBox.Show("Конец игры!");
+            }
+            label1.Text = test.count.ToString();
+        }
+
+        private void Button4_Click(object sender, EventArgs e)
+        {
+            if (test.Move(4) == false)
+            {
+                MessageBox.Show("Конец игры!");
+            }
+            label1.Text = test.count.ToString();
+        }
     }
 }
