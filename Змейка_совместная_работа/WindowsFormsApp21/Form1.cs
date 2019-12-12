@@ -47,6 +47,7 @@ namespace WindowsFormsApp21
             {
                 MessageBox.Show("Конец игры!");
             }
+
             label1.Text = test.count.ToString();
 
         }
