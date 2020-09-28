@@ -42,12 +42,14 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 261);
+            this.label2.Location = new System.Drawing.Point(12, 326);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(86, 25);
             this.label2.TabIndex = 7;
@@ -64,7 +66,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(17, 289);
+            this.textBox2.Location = new System.Drawing.Point(17, 354);
             this.textBox2.Name = "textBox2";
             this.textBox2.PasswordChar = '*';
             this.textBox2.Size = new System.Drawing.Size(247, 31);
@@ -74,7 +76,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(17, 323);
+            this.label3.Location = new System.Drawing.Point(17, 388);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(248, 25);
             this.label3.TabIndex = 9;
@@ -82,7 +84,7 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(17, 351);
+            this.textBox3.Location = new System.Drawing.Point(17, 416);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(247, 31);
             this.textBox3.TabIndex = 8;
@@ -139,7 +141,7 @@
             // button2
             // 
             this.button2.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.button2.Location = new System.Drawing.Point(17, 446);
+            this.button2.Location = new System.Drawing.Point(17, 511);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(247, 38);
             this.button2.TabIndex = 17;
@@ -149,7 +151,7 @@
             // button1
             // 
             this.button1.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.button1.Location = new System.Drawing.Point(17, 402);
+            this.button1.Location = new System.Drawing.Point(17, 467);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(247, 38);
             this.button1.TabIndex = 16;
@@ -164,13 +166,31 @@
             this.maskedTextBox1.Size = new System.Drawing.Size(247, 31);
             this.maskedTextBox1.TabIndex = 18;
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(12, 264);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(63, 25);
+            this.label7.TabIndex = 20;
+            this.label7.Text = "email";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(17, 292);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(247, 31);
+            this.textBox1.TabIndex = 19;
+            // 
             // Form2
             // 
             this.AcceptButton = this.button1;
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.button2;
-            this.ClientSize = new System.Drawing.Size(288, 500);
+            this.ClientSize = new System.Drawing.Size(288, 573);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.maskedTextBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -187,9 +207,10 @@
             this.Controls.Add(this.textBox2);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Form2";
             this.Text = "Регистрация";
+            this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -211,5 +232,7 @@
         public System.Windows.Forms.Button button2;
         public System.Windows.Forms.Button button1;
         public System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        public System.Windows.Forms.Label label7;
+        public System.Windows.Forms.TextBox textBox1;
     }
 }

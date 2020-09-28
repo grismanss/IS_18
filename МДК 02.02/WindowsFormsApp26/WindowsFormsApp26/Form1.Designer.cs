@@ -80,6 +80,7 @@
             this.button2.TabIndex = 5;
             this.button2.Text = "Регистрация";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.Button2_Click);
             // 
             // button3
             // 
@@ -111,7 +112,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox2);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Form1";
             this.Text = "Авторизация";
             this.ResumeLayout(false);
