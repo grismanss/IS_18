@@ -43,6 +43,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(247, 31);
             this.textBox2.TabIndex = 1;
+            this.textBox2.Text = "22";
             this.textBox2.UseSystemPasswordChar = true;
             // 
             // label1
@@ -71,6 +72,7 @@
             this.button1.TabIndex = 4;
             this.button1.Text = "Авторизоваться";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // button2
             // 
@@ -98,6 +100,7 @@
             this.maskedTextBox1.Name = "maskedTextBox1";
             this.maskedTextBox1.Size = new System.Drawing.Size(247, 31);
             this.maskedTextBox1.TabIndex = 19;
+            this.maskedTextBox1.Text = "2222222222";
             // 
             // Form1
             // 

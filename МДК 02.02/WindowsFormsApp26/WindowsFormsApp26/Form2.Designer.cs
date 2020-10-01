@@ -157,6 +157,7 @@
             this.button1.TabIndex = 16;
             this.button1.Text = "Регистрация";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // maskedTextBox1
             // 
@@ -210,6 +211,8 @@
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Form2";
             this.Text = "Регистрация";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form2_FormClosing);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form2_FormClosed);
             this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

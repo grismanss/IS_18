@@ -19,6 +19,9 @@ namespace WindowsFormsApp26
         public static SqlConnection connect = new SqlConnection
             (Program.connect_string);
 
+        public static bool type_user = false;
+        public static string login_user = "";
+
         //  public static string connect_string2 = "Data Source=505-S-S\\SQLEXPRESS;Initial Catalog=restoran;Integrated Security=True";
 
 
