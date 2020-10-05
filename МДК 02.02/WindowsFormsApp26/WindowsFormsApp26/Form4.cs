@@ -26,13 +26,18 @@ namespace WindowsFormsApp26
 
         private void Button1_Click(object sender, EventArgs e)
         {
+            this.Close();
             Form3 f = new Form3();
             f.Show();
         }
 
         private void ToolStripButton1_Click(object sender, EventArgs e)
         {
-           
+            this.categoriesTableAdapter.Update
+                (this.restoranDataSet.Categories);
+
+            this.categoriesTableAdapter.Fill
+                (this.restoranDataSet.Categories);
         }
 
         

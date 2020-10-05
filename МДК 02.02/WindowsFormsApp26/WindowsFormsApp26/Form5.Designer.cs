@@ -30,9 +30,12 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.restoranDataSet1 = new WindowsFormsApp26.restoranDataSet1();
             this.dishBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.restoranDataSet1 = new WindowsFormsApp26.restoranDataSet1();
             this.dishTableAdapter = new WindowsFormsApp26.restoranDataSet1TableAdapters.DishTableAdapter();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.priceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -41,12 +44,10 @@
             this.vesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.categoriesIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.photoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.restoranDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dishBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.restoranDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -63,7 +64,8 @@
             this.sostavDataGridViewTextBoxColumn,
             this.vesDataGridViewTextBoxColumn,
             this.categoriesIDDataGridViewTextBoxColumn,
-            this.photoDataGridViewTextBoxColumn});
+            this.photoDataGridViewTextBoxColumn,
+            this.Column1});
             this.dataGridView1.DataSource = this.dishBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(12, 12);
             this.dataGridView1.Name = "dataGridView1";
@@ -71,19 +73,49 @@
             this.dataGridView1.Size = new System.Drawing.Size(867, 286);
             this.dataGridView1.TabIndex = 0;
             // 
-            // restoranDataSet1
-            // 
-            this.restoranDataSet1.DataSetName = "restoranDataSet1";
-            this.restoranDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // dishBindingSource
             // 
             this.dishBindingSource.DataMember = "Dish";
             this.dishBindingSource.DataSource = this.restoranDataSet1;
             // 
+            // restoranDataSet1
+            // 
+            this.restoranDataSet1.DataSetName = "restoranDataSet1";
+            this.restoranDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // dishTableAdapter
             // 
             this.dishTableAdapter.ClearBeforeFill = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(12, 315);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(145, 35);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Добавить";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(12, 356);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(145, 35);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "Удалить";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.Button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(12, 397);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(145, 35);
+            this.button3.TabIndex = 3;
+            this.button3.Text = "Редактировать";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.Button3_Click);
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -127,6 +159,7 @@
             this.categoriesIDDataGridViewTextBoxColumn.DataPropertyName = "CategoriesID";
             this.categoriesIDDataGridViewTextBoxColumn.HeaderText = "CategoriesID";
             this.categoriesIDDataGridViewTextBoxColumn.Name = "categoriesIDDataGridViewTextBoxColumn";
+            this.categoriesIDDataGridViewTextBoxColumn.Visible = false;
             // 
             // photoDataGridViewTextBoxColumn
             // 
@@ -134,33 +167,10 @@
             this.photoDataGridViewTextBoxColumn.HeaderText = "Photo";
             this.photoDataGridViewTextBoxColumn.Name = "photoDataGridViewTextBoxColumn";
             // 
-            // button1
+            // Column1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 315);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(145, 35);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Добавть";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(12, 356);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(145, 35);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Удалить";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.Button2_Click);
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(12, 397);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(145, 35);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Редактировать";
-            this.button3.UseVisualStyleBackColor = true;
+            this.Column1.HeaderText = "Категория";
+            this.Column1.Name = "Column1";
             // 
             // Form5
             // 
@@ -175,8 +185,8 @@
             this.Text = "Form5";
             this.Load += new System.EventHandler(this.Form5_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.restoranDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dishBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.restoranDataSet1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -187,6 +197,9 @@
         private restoranDataSet1 restoranDataSet1;
         private System.Windows.Forms.BindingSource dishBindingSource;
         private restoranDataSet1TableAdapters.DishTableAdapter dishTableAdapter;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn priceDataGridViewTextBoxColumn;
@@ -195,8 +208,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn vesDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn categoriesIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn photoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
     }
 }

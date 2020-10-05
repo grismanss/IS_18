@@ -31,12 +31,12 @@
             this.components = new System.ComponentModel.Container();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.работаСМенюToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.категорииБлюдToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.блюдаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.работаСПользователямиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.работаСЗаказамиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.отчетыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.категорииБлюдToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.блюдаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,6 +61,21 @@
             this.работаСМенюToolStripMenuItem.Name = "работаСМенюToolStripMenuItem";
             this.работаСМенюToolStripMenuItem.Size = new System.Drawing.Size(101, 20);
             this.работаСМенюToolStripMenuItem.Text = "Работа с меню";
+            this.работаСМенюToolStripMenuItem.Click += new System.EventHandler(this.РаботаСМенюToolStripMenuItem_Click);
+            // 
+            // категорииБлюдToolStripMenuItem
+            // 
+            this.категорииБлюдToolStripMenuItem.Name = "категорииБлюдToolStripMenuItem";
+            this.категорииБлюдToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.категорииБлюдToolStripMenuItem.Text = "Категории блюд";
+            this.категорииБлюдToolStripMenuItem.Click += new System.EventHandler(this.КатегорииБлюдToolStripMenuItem_Click);
+            // 
+            // блюдаToolStripMenuItem
+            // 
+            this.блюдаToolStripMenuItem.Name = "блюдаToolStripMenuItem";
+            this.блюдаToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.блюдаToolStripMenuItem.Text = "Блюда";
+            this.блюдаToolStripMenuItem.Click += new System.EventHandler(this.БлюдаToolStripMenuItem_Click);
             // 
             // работаСПользователямиToolStripMenuItem
             // 
@@ -84,20 +99,6 @@
             // 
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
-            // 
-            // категорииБлюдToolStripMenuItem
-            // 
-            this.категорииБлюдToolStripMenuItem.Name = "категорииБлюдToolStripMenuItem";
-            this.категорииБлюдToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.категорииБлюдToolStripMenuItem.Text = "Категории блюд";
-            this.категорииБлюдToolStripMenuItem.Click += new System.EventHandler(this.КатегорииБлюдToolStripMenuItem_Click);
-            // 
-            // блюдаToolStripMenuItem
-            // 
-            this.блюдаToolStripMenuItem.Name = "блюдаToolStripMenuItem";
-            this.блюдаToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.блюдаToolStripMenuItem.Text = "Блюда";
-            this.блюдаToolStripMenuItem.Click += new System.EventHandler(this.БлюдаToolStripMenuItem_Click);
             // 
             // Form3
             // 

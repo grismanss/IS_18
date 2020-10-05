@@ -23,3 +23,4 @@ C:\Users\505_ss\Desktop\IS_18\МДК 02.02\WindowsFormsApp26\WindowsFormsApp26\o
 C:\Users\505_ss\Desktop\IS_18\МДК 02.02\WindowsFormsApp26\WindowsFormsApp26\obj\Debug\WindowsFormsApp26.Form3.resources
 C:\Users\505_ss\Desktop\IS_18\МДК 02.02\WindowsFormsApp26\WindowsFormsApp26\obj\Debug\WindowsFormsApp26.Form4.resources
 C:\Users\505_ss\Desktop\IS_18\МДК 02.02\WindowsFormsApp26\WindowsFormsApp26\obj\Debug\WindowsFormsApp26.Form5.resources
+C:\Users\505_ss\Desktop\IS_18\МДК 02.02\WindowsFormsApp26\WindowsFormsApp26\obj\Debug\WindowsFormsApp26.Form6.resources

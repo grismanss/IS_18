@@ -21,12 +21,19 @@ namespace WindowsFormsApp26
         {
             Form4 f = new Form4();
             f.Show();
+            this.Close();
         }
 
         private void БлюдаToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form5 f = new Form5();
             f.Show();
+            this.Close();
+        }
+
+        private void РаботаСМенюToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
