@@ -65,6 +65,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(166, 31);
             this.textBox1.TabIndex = 0;
+            this.textBox1.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
             // 
             // label1
             // 
@@ -74,6 +75,7 @@
             this.label1.Size = new System.Drawing.Size(161, 25);
             this.label1.TabIndex = 1;
             this.label1.Text = "Наименование";
+            this.label1.Click += new System.EventHandler(this.Label1_Click);
             // 
             // label2
             // 
@@ -83,6 +85,7 @@
             this.label2.Size = new System.Drawing.Size(120, 25);
             this.label2.TabIndex = 2;
             this.label2.Text = "Стоимость";
+            this.label2.Click += new System.EventHandler(this.Label2_Click);
             // 
             // numericUpDown1
             // 
@@ -90,6 +93,7 @@
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(161, 31);
             this.numericUpDown1.TabIndex = 3;
+            this.numericUpDown1.ValueChanged += new System.EventHandler(this.NumericUpDown1_ValueChanged);
             // 
             // numericUpDown2
             // 
@@ -97,6 +101,7 @@
             this.numericUpDown2.Name = "numericUpDown2";
             this.numericUpDown2.Size = new System.Drawing.Size(161, 31);
             this.numericUpDown2.TabIndex = 5;
+            this.numericUpDown2.ValueChanged += new System.EventHandler(this.NumericUpDown2_ValueChanged);
             // 
             // label3
             // 
@@ -106,6 +111,7 @@
             this.label3.Size = new System.Drawing.Size(154, 25);
             this.label3.TabIndex = 4;
             this.label3.Text = "Калорийность";
+            this.label3.Click += new System.EventHandler(this.Label3_Click);
             // 
             // label5
             // 
@@ -115,6 +121,7 @@
             this.label5.Size = new System.Drawing.Size(83, 25);
             this.label5.TabIndex = 7;
             this.label5.Text = "Состав";
+            this.label5.Click += new System.EventHandler(this.Label5_Click);
             // 
             // textBox2
             // 
@@ -123,6 +130,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(323, 115);
             this.textBox2.TabIndex = 6;
+            this.textBox2.TextChanged += new System.EventHandler(this.TextBox2_TextChanged);
             // 
             // numericUpDown3
             // 
@@ -130,6 +138,7 @@
             this.numericUpDown3.Name = "numericUpDown3";
             this.numericUpDown3.Size = new System.Drawing.Size(161, 31);
             this.numericUpDown3.TabIndex = 9;
+            this.numericUpDown3.ValueChanged += new System.EventHandler(this.NumericUpDown3_ValueChanged);
             // 
             // label4
             // 
@@ -139,6 +148,7 @@
             this.label4.Size = new System.Drawing.Size(49, 25);
             this.label4.TabIndex = 8;
             this.label4.Text = "Вес";
+            this.label4.Click += new System.EventHandler(this.Label4_Click);
             // 
             // comboBox1
             // 
@@ -170,6 +180,7 @@
             this.label6.Size = new System.Drawing.Size(115, 25);
             this.label6.TabIndex = 11;
             this.label6.Text = "Категория";
+            this.label6.Click += new System.EventHandler(this.Label6_Click);
             // 
             // pictureBox1
             // 
@@ -178,6 +189,7 @@
             this.pictureBox1.Size = new System.Drawing.Size(256, 184);
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.PictureBox1_Click);
             // 
             // label7
             // 
@@ -187,6 +199,7 @@
             this.label7.Size = new System.Drawing.Size(124, 25);
             this.label7.TabIndex = 13;
             this.label7.Text = "Имя файла";
+            this.label7.Click += new System.EventHandler(this.Label7_Click);
             // 
             // button1
             // 
@@ -206,6 +219,7 @@
             this.label8.Size = new System.Drawing.Size(30, 25);
             this.label8.TabIndex = 15;
             this.label8.Text = "...";
+            this.label8.Click += new System.EventHandler(this.Label8_Click);
             // 
             // button2
             // 
@@ -227,6 +241,7 @@
             this.button3.TabIndex = 17;
             this.button3.Text = "Отмена";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.Button3_Click);
             // 
             // categoriesTableAdapter
             // 
@@ -298,9 +313,9 @@
         public System.Windows.Forms.Label label8;
         public System.Windows.Forms.Button button2;
         public System.Windows.Forms.Button button3;
-        private restoranDataSet2 restoranDataSet2;
         private System.Windows.Forms.BindingSource categoriesBindingSource;
-        private restoranDataSet2TableAdapters.CategoriesTableAdapter categoriesTableAdapter;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        public restoranDataSet2 restoranDataSet2;
+        public restoranDataSet2TableAdapters.CategoriesTableAdapter categoriesTableAdapter;
     }
 }

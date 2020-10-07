@@ -90,6 +90,11 @@ namespace WindowsFormsApp26
         {
             Form6 f = new Form6();
             f.Text = "Добавление";
+
+            f.categoriesTableAdapter.Fill
+               (f.restoranDataSet2.Categories);
+            f.comboBox1.SelectedIndex = 0;
+
             if (f.ShowDialog() == DialogResult.OK)
             {
                 string nam = f.textBox1.Text.Trim();
@@ -99,6 +104,11 @@ namespace WindowsFormsApp26
                 string ves = f.numericUpDown3.Value.ToString();
                 string kateg = f.comboBox1.SelectedValue.ToString();
                 string foto = f.label8.Text;
+
+               
+
+                
+
                 string s = "insert into Dish(Name,Price, Calorie,Sostav," +
                     "Ves,CategoriesID, Photo) " +
                     "values('" + nam + "'," + stoim +
@@ -136,12 +146,18 @@ namespace WindowsFormsApp26
                 //Поправить соответсиве
                 f.comboBox1.SelectedValue= Convert.ToInt32(reader.GetValue(6));
                 
-               f.pictureBox1.Image=  
+                f.pictureBox1.Image=  
                     Image.FromFile(reader.GetValue(7).ToString());
                 f.label8.Text = reader.GetValue(7).ToString();
                 f.Text = "Редактирование";
-                                                          
-                
+
+                f.categoriesTableAdapter.Fill
+                (f.restoranDataSet2.Categories);//!!!!!
+               
+                f.comboBox1.SelectedValue =
+                    Convert.ToInt32(reader.GetValue(6));
+
+
                 if (f.ShowDialog() == DialogResult.OK)
                 {
                     Program.connect.Close();

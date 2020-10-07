@@ -86,5 +86,12 @@ namespace WindowsFormsApp26
             Program.connect.Close();
 
         }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            Form7 f = new Form7();
+            f.Show();
+        }
     }
 }

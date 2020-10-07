@@ -122,6 +122,7 @@
             this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
             this.idDataGridViewTextBoxColumn.HeaderText = "id";
             this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.idDataGridViewTextBoxColumn.Visible = false;
             // 
             // nameDataGridViewTextBoxColumn
@@ -129,36 +130,42 @@
             this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
             this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
             this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            this.nameDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // priceDataGridViewTextBoxColumn
             // 
             this.priceDataGridViewTextBoxColumn.DataPropertyName = "Price";
             this.priceDataGridViewTextBoxColumn.HeaderText = "Price";
             this.priceDataGridViewTextBoxColumn.Name = "priceDataGridViewTextBoxColumn";
+            this.priceDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // calorieDataGridViewTextBoxColumn
             // 
             this.calorieDataGridViewTextBoxColumn.DataPropertyName = "Calorie";
             this.calorieDataGridViewTextBoxColumn.HeaderText = "Calorie";
             this.calorieDataGridViewTextBoxColumn.Name = "calorieDataGridViewTextBoxColumn";
+            this.calorieDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // sostavDataGridViewTextBoxColumn
             // 
             this.sostavDataGridViewTextBoxColumn.DataPropertyName = "Sostav";
             this.sostavDataGridViewTextBoxColumn.HeaderText = "Sostav";
             this.sostavDataGridViewTextBoxColumn.Name = "sostavDataGridViewTextBoxColumn";
+            this.sostavDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // vesDataGridViewTextBoxColumn
             // 
             this.vesDataGridViewTextBoxColumn.DataPropertyName = "Ves";
             this.vesDataGridViewTextBoxColumn.HeaderText = "Ves";
             this.vesDataGridViewTextBoxColumn.Name = "vesDataGridViewTextBoxColumn";
+            this.vesDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // categoriesIDDataGridViewTextBoxColumn
             // 
             this.categoriesIDDataGridViewTextBoxColumn.DataPropertyName = "CategoriesID";
             this.categoriesIDDataGridViewTextBoxColumn.HeaderText = "CategoriesID";
             this.categoriesIDDataGridViewTextBoxColumn.Name = "categoriesIDDataGridViewTextBoxColumn";
+            this.categoriesIDDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.categoriesIDDataGridViewTextBoxColumn.Visible = false;
             // 
             // photoDataGridViewTextBoxColumn
@@ -166,11 +173,13 @@
             this.photoDataGridViewTextBoxColumn.DataPropertyName = "Photo";
             this.photoDataGridViewTextBoxColumn.HeaderText = "Photo";
             this.photoDataGridViewTextBoxColumn.Name = "photoDataGridViewTextBoxColumn";
+            this.photoDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // Column1
             // 
             this.Column1.HeaderText = "Категория";
             this.Column1.Name = "Column1";
+            this.Column1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // Form5
             // 
