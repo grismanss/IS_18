@@ -43,3 +43,5 @@ C:\Users\Homi\Desktop\WindowsFormsApp26\WindowsFormsApp26\WindowsFormsApp26\obj\
 C:\Users\Homi\Desktop\WindowsFormsApp26\WindowsFormsApp26\WindowsFormsApp26\obj\Debug\WindowsFormsApp26.pdb
 C:\Users\Homi\Desktop\WindowsFormsApp26\WindowsFormsApp26\WindowsFormsApp26\obj\Debug\WindowsFormsApp26.Form8.resources
 C:\Users\Homi\Desktop\WindowsFormsApp26\WindowsFormsApp26\WindowsFormsApp26\obj\Debug\WindowsFormsApp26.Form9.resources
+C:\Users\Homi\Desktop\WindowsFormsApp26\WindowsFormsApp26\WindowsFormsApp26\obj\Debug\WindowsFormsApp26.Form10.resources
+C:\Users\Homi\Desktop\WindowsFormsApp26\WindowsFormsApp26\WindowsFormsApp26\obj\Debug\WindowsFormsApp26.Form11.resources

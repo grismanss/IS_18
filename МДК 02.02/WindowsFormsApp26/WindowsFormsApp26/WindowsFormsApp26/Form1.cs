@@ -85,6 +85,7 @@ namespace WindowsFormsApp26
                 {
                     Form3 f = new Form3();
                     f.Show();
+                    this.Visible = false;
                 }
                 else
                 {
@@ -105,6 +106,7 @@ namespace WindowsFormsApp26
                     f.label5.Text = reader1.GetValue(5).ToString();
                     f.Show();
                     Program.connect.Close();
+                    this.Visible = false;
                 }
             }
 
