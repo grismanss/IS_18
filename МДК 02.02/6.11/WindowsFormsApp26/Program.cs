@@ -16,8 +16,10 @@ namespace WindowsFormsApp26
 
         public struct Korzina
         {
-            public static int id;
-            public static int count;
+            public  int id;
+            public  int count;
+            public  string name;
+            public  int price;
         }
 
        // создаем глобальную переменную для строки подключения
@@ -28,6 +30,7 @@ namespace WindowsFormsApp26
         public static bool type_user = false;
         public static string login_user = "";
         public static Korzina[] korzina;
+        
 
         //  public static string connect_string2 = "Data Source=505-S-S\\SQLEXPRESS;Initial Catalog=restoran;Integrated Security=True";
 

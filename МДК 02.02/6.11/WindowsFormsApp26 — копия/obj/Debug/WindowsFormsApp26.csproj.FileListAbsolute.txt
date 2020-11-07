@@ -1,0 +1,47 @@
+C:\Users\505_ss\source\repos\WindowsFormsApp26\WindowsFormsApp26\bin\Debug\WindowsFormsApp26.exe.config
+C:\Users\505_ss\source\repos\WindowsFormsApp26\WindowsFormsApp26\bin\Debug\WindowsFormsApp26.exe
+C:\Users\505_ss\source\repos\WindowsFormsApp26\WindowsFormsApp26\bin\Debug\WindowsFormsApp26.pdb
+C:\Users\505_ss\source\repos\WindowsFormsApp26\WindowsFormsApp26\obj\Debug\WindowsFormsApp26.csprojAssemblyReference.cache
+C:\Users\505_ss\source\repos\WindowsFormsApp26\WindowsFormsApp26\obj\Debug\WindowsFormsApp26.Properties.Resources.resources
+C:\Users\505_ss\source\repos\WindowsFormsApp26\WindowsFormsApp26\obj\Debug\WindowsFormsApp26.csproj.GenerateResource.cache
+C:\Users\505_ss\source\repos\WindowsFormsApp26\WindowsFormsApp26\obj\Debug\WindowsFormsApp26.csproj.CoreCompileInputs.cache
+C:\Users\505_ss\source\repos\WindowsFormsApp26\WindowsFormsApp26\obj\Debug\WindowsFormsApp26.exe
+C:\Users\505_ss\source\repos\WindowsFormsApp26\WindowsFormsApp26\obj\Debug\WindowsFormsApp26.pdb
+C:\Users\505_ss\source\repos\WindowsFormsApp26\WindowsFormsApp26\obj\Debug\WindowsFormsApp26.Form1.resources
+C:\Users\505_ss\source\repos\WindowsFormsApp26\WindowsFormsApp26\obj\Debug\WindowsFormsApp26.Form2.resources
+C:\Users\505_ss\Desktop\IS_18\МДК 02.02\WindowsFormsApp26\WindowsFormsApp26\bin\Debug\WindowsFormsApp26.exe.config
+C:\Users\505_ss\Desktop\IS_18\МДК 02.02\WindowsFormsApp26\WindowsFormsApp26\bin\Debug\WindowsFormsApp26.exe
+C:\Users\505_ss\Desktop\IS_18\МДК 02.02\WindowsFormsApp26\WindowsFormsApp26\bin\Debug\WindowsFormsApp26.pdb
+C:\Users\505_ss\Desktop\IS_18\МДК 02.02\WindowsFormsApp26\WindowsFormsApp26\obj\Debug\WindowsFormsApp26.csprojAssemblyReference.cache
+C:\Users\505_ss\Desktop\IS_18\МДК 02.02\WindowsFormsApp26\WindowsFormsApp26\obj\Debug\WindowsFormsApp26.Form1.resources
+C:\Users\505_ss\Desktop\IS_18\МДК 02.02\WindowsFormsApp26\WindowsFormsApp26\obj\Debug\WindowsFormsApp26.Form2.resources
+C:\Users\505_ss\Desktop\IS_18\МДК 02.02\WindowsFormsApp26\WindowsFormsApp26\obj\Debug\WindowsFormsApp26.Properties.Resources.resources
+C:\Users\505_ss\Desktop\IS_18\МДК 02.02\WindowsFormsApp26\WindowsFormsApp26\obj\Debug\WindowsFormsApp26.csproj.GenerateResource.cache
+C:\Users\505_ss\Desktop\IS_18\МДК 02.02\WindowsFormsApp26\WindowsFormsApp26\obj\Debug\WindowsFormsApp26.csproj.CoreCompileInputs.cache
+C:\Users\505_ss\Desktop\IS_18\МДК 02.02\WindowsFormsApp26\WindowsFormsApp26\obj\Debug\WindowsFormsApp26.exe
+C:\Users\505_ss\Desktop\IS_18\МДК 02.02\WindowsFormsApp26\WindowsFormsApp26\obj\Debug\WindowsFormsApp26.pdb
+C:\Users\505_ss\Desktop\IS_18\МДК 02.02\WindowsFormsApp26\WindowsFormsApp26\obj\Debug\WindowsFormsApp26.Form3.resources
+C:\Users\505_ss\Desktop\IS_18\МДК 02.02\WindowsFormsApp26\WindowsFormsApp26\obj\Debug\WindowsFormsApp26.Form4.resources
+C:\Users\505_ss\Desktop\IS_18\МДК 02.02\WindowsFormsApp26\WindowsFormsApp26\obj\Debug\WindowsFormsApp26.Form5.resources
+C:\Users\505_ss\Desktop\IS_18\МДК 02.02\WindowsFormsApp26\WindowsFormsApp26\obj\Debug\WindowsFormsApp26.Form6.resources
+C:\Users\505_ss\Desktop\IS_18\МДК 02.02\WindowsFormsApp26\WindowsFormsApp26\obj\Debug\WindowsFormsApp26.Form7.resources
+C:\Users\Homi\Desktop\WindowsFormsApp26\WindowsFormsApp26\WindowsFormsApp26\bin\Debug\WindowsFormsApp26.exe.config
+C:\Users\Homi\Desktop\WindowsFormsApp26\WindowsFormsApp26\WindowsFormsApp26\bin\Debug\WindowsFormsApp26.exe
+C:\Users\Homi\Desktop\WindowsFormsApp26\WindowsFormsApp26\WindowsFormsApp26\bin\Debug\WindowsFormsApp26.pdb
+C:\Users\Homi\Desktop\WindowsFormsApp26\WindowsFormsApp26\WindowsFormsApp26\obj\Debug\WindowsFormsApp26.csprojAssemblyReference.cache
+C:\Users\Homi\Desktop\WindowsFormsApp26\WindowsFormsApp26\WindowsFormsApp26\obj\Debug\WindowsFormsApp26.Form1.resources
+C:\Users\Homi\Desktop\WindowsFormsApp26\WindowsFormsApp26\WindowsFormsApp26\obj\Debug\WindowsFormsApp26.Form2.resources
+C:\Users\Homi\Desktop\WindowsFormsApp26\WindowsFormsApp26\WindowsFormsApp26\obj\Debug\WindowsFormsApp26.Form3.resources
+C:\Users\Homi\Desktop\WindowsFormsApp26\WindowsFormsApp26\WindowsFormsApp26\obj\Debug\WindowsFormsApp26.Form4.resources
+C:\Users\Homi\Desktop\WindowsFormsApp26\WindowsFormsApp26\WindowsFormsApp26\obj\Debug\WindowsFormsApp26.Form5.resources
+C:\Users\Homi\Desktop\WindowsFormsApp26\WindowsFormsApp26\WindowsFormsApp26\obj\Debug\WindowsFormsApp26.Form6.resources
+C:\Users\Homi\Desktop\WindowsFormsApp26\WindowsFormsApp26\WindowsFormsApp26\obj\Debug\WindowsFormsApp26.Form7.resources
+C:\Users\Homi\Desktop\WindowsFormsApp26\WindowsFormsApp26\WindowsFormsApp26\obj\Debug\WindowsFormsApp26.Properties.Resources.resources
+C:\Users\Homi\Desktop\WindowsFormsApp26\WindowsFormsApp26\WindowsFormsApp26\obj\Debug\WindowsFormsApp26.csproj.GenerateResource.cache
+C:\Users\Homi\Desktop\WindowsFormsApp26\WindowsFormsApp26\WindowsFormsApp26\obj\Debug\WindowsFormsApp26.csproj.CoreCompileInputs.cache
+C:\Users\Homi\Desktop\WindowsFormsApp26\WindowsFormsApp26\WindowsFormsApp26\obj\Debug\WindowsFormsApp26.exe
+C:\Users\Homi\Desktop\WindowsFormsApp26\WindowsFormsApp26\WindowsFormsApp26\obj\Debug\WindowsFormsApp26.pdb
+C:\Users\Homi\Desktop\WindowsFormsApp26\WindowsFormsApp26\WindowsFormsApp26\obj\Debug\WindowsFormsApp26.Form8.resources
+C:\Users\Homi\Desktop\WindowsFormsApp26\WindowsFormsApp26\WindowsFormsApp26\obj\Debug\WindowsFormsApp26.Form9.resources
+C:\Users\Homi\Desktop\WindowsFormsApp26\WindowsFormsApp26\WindowsFormsApp26\obj\Debug\WindowsFormsApp26.Form10.resources
+C:\Users\Homi\Desktop\WindowsFormsApp26\WindowsFormsApp26\WindowsFormsApp26\obj\Debug\WindowsFormsApp26.Form11.resources

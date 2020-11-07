@@ -204,7 +204,11 @@ namespace WindowsFormsApp26
 
         private void Form7_FormClosing(object sender, FormClosingEventArgs e)
         {
-
+            if (Program.login_user != "" && Program.type_user==false)
+            {
+                Form9 f = new Form9();
+                f.Show();
+            }
         }
 
         private void Button1_Click(object sender, EventArgs e)
@@ -244,6 +248,9 @@ namespace WindowsFormsApp26
             f.label5.Text = reader.GetValue(3).ToString();
             f.textBox1.Text= reader.GetValue(4).ToString();
             f.label7.Text = reader.GetValue(5).ToString();
+
+            f.label13.Text= reader.GetValue(0).ToString();
+
             string id_kat= reader.GetValue(6).ToString();
             Program.connect.Close();
 

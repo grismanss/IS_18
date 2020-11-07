@@ -22,6 +22,7 @@ namespace WindowsFormsApp26
         {
             Form7 f = new Form7();
             f.Show();
+            this.Close();
         }
 
         private void сменитьПарольToolStripMenuItem_Click(object sender, EventArgs e)
@@ -69,7 +70,35 @@ namespace WindowsFormsApp26
 
         private void Form9_Load(object sender, EventArgs e)
         {
+            string s1 = "select * from Users where Phone='" + Program.login_user + "'";
+            Program.connect.Open();
+            SqlCommand sql1 = new SqlCommand(s1, Program.connect);
+            SqlDataReader reader1 = sql1.ExecuteReader();
+            reader1.Read();
 
+           //Form9 f = new Form9();
+            label2.Text = reader1.GetValue(2).ToString().Trim() + " "
+                + reader1.GetValue(3).ToString().Trim() + " "
+                + reader1.GetValue(4).ToString().Trim();
+
+            label3.Text = reader1.GetValue(1).ToString();
+
+            label5.Text = reader1.GetValue(5).ToString();
+           // f.Show();
+            Program.connect.Close();
+
+            if (Program.korzina.Length > 1)
+            {
+                dataGridView1.RowCount = Program.korzina.Length - 1;
+                for (int i = 0; i < Program.korzina.Length-1; i++)
+                {
+                    dataGridView1[0, i].Value = Program.korzina[i].id;
+                    dataGridView1[1, i].Value = Program.korzina[i].name;
+                    dataGridView1[2, i].Value = Program.korzina[i].count;
+                    dataGridView1[3, i].Value = Program.korzina[i].price;
+                    dataGridView1[4, i].Value = Program.korzina[i].price * Program.korzina[i].count;
+                }
+            }
         }
 
         private void выходToolStripMenuItem_Click(object sender, EventArgs e)

@@ -90,22 +90,23 @@ namespace WindowsFormsApp26
                 else
                 {
                     Program.korzina = new Program.Korzina[1];
-                    string s1 = "select * from Users where Phone='" + Program.login_user+"'";
-                    Program.connect.Open();
-                    SqlCommand sql1 = new SqlCommand(s1, Program.connect);
-                    SqlDataReader reader1 = sql1.ExecuteReader();
-                    reader1.Read();
-
                     Form9 f = new Form9();
-                    f.label2.Text = reader1.GetValue(2).ToString().Trim() + " "
-                        + reader1.GetValue(3).ToString().Trim() + " " 
-                        + reader1.GetValue(4).ToString().Trim();
+                    /* string s1 = "select * from Users where Phone='" + Program.login_user+"'";
+                     Program.connect.Open();
+                     SqlCommand sql1 = new SqlCommand(s1, Program.connect);
+                     SqlDataReader reader1 = sql1.ExecuteReader();
+                     reader1.Read();
 
-                    f.label3.Text = reader1.GetValue(1).ToString();
 
-                    f.label5.Text = reader1.GetValue(5).ToString();
+                     f.label2.Text = reader1.GetValue(2).ToString().Trim() + " "
+                         + reader1.GetValue(3).ToString().Trim() + " " 
+                         + reader1.GetValue(4).ToString().Trim();
+
+                     f.label3.Text = reader1.GetValue(1).ToString();
+
+                     f.label5.Text = reader1.GetValue(5).ToString();*/
                     f.Show();
-                    Program.connect.Close();
+                  //  Program.connect.Close();
                     this.Visible = false;
                 }
             }

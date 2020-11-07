@@ -44,6 +44,7 @@
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.label12 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.label13 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
@@ -214,12 +215,23 @@
             this.button1.Text = "Добаваить в корзину";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Visible = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(561, 248);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(0, 13);
+            this.label13.TabIndex = 16;
+            this.label13.Visible = false;
             // 
             // Form8
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(645, 450);
+            this.Controls.Add(this.label13);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.numericUpDown1);
@@ -265,5 +277,6 @@
         public System.Windows.Forms.NumericUpDown numericUpDown1;
         public System.Windows.Forms.Label label12;
         public System.Windows.Forms.Button button1;
+        public System.Windows.Forms.Label label13;
     }
 }
