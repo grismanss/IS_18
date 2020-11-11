@@ -224,7 +224,6 @@
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(0, 13);
             this.label13.TabIndex = 16;
-            this.label13.Visible = false;
             // 
             // Form8
             // 

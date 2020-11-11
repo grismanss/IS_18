@@ -84,12 +84,14 @@ namespace WindowsFormsApp26
             label3.Text = reader1.GetValue(1).ToString();
 
             label5.Text = reader1.GetValue(5).ToString();
-           // f.Show();
+            label9.Text= reader1.GetValue(0).ToString();
+            // f.Show();
             Program.connect.Close();
 
             if (Program.korzina.Length > 1)
             {
                 dataGridView1.RowCount = Program.korzina.Length - 1;
+                int summ = 0;
                 for (int i = 0; i < Program.korzina.Length-1; i++)
                 {
                     dataGridView1[0, i].Value = Program.korzina[i].id;
@@ -97,7 +99,9 @@ namespace WindowsFormsApp26
                     dataGridView1[2, i].Value = Program.korzina[i].count;
                     dataGridView1[3, i].Value = Program.korzina[i].price;
                     dataGridView1[4, i].Value = Program.korzina[i].price * Program.korzina[i].count;
+                    summ += Program.korzina[i].price * Program.korzina[i].count;
                 }
+                label8.Text = summ.ToString();
             }
         }
 
@@ -156,6 +160,64 @@ namespace WindowsFormsApp26
                 }
 
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DateTime d = DateTime.Now;
+            string ds = d.ToString("yyyy-MM-dd");
+            int k = 0;
+            if (radioButton2.Checked)
+            {
+                k = 1;
+            }
+            string s = "insert into AllOrders (Date,UserID,Sum, Mesto) values('"+ ds 
+                + "'," + label9.Text + "," + label8.Text + ","+k+");";
+            Program.connect.Open();
+            SqlCommand sql = new SqlCommand(s, Program.connect);
+            sql.ExecuteNonQuery();
+            Program.connect.Close();
+
+
+
+            string s1 = "select id from AllOrders order by id desc";
+            Program.connect.Open();
+            SqlCommand sql1 = new SqlCommand(s1, Program.connect);
+            SqlDataReader reader1 = sql1.ExecuteReader();
+            reader1.Read();
+            string id_allOrder= reader1.GetValue(0).ToString();          
+            Program.connect.Close();
+
+
+            for (int i=0; i<Program.korzina.Length-1; i++)
+            {
+                string s3 = "insert into Orders (DishID, Kol_vo,AllOrdersID)" +
+                    " values("+ Program.korzina[i].id
+                    + ","+
+                   Program.korzina[i].count + ","+
+                  id_allOrder + ")";
+                Program.connect.Open();
+                SqlCommand sql3 = new SqlCommand(s3, Program.connect);
+                sql3.ExecuteNonQuery();
+                Program.connect.Close();
+            }
+
+            Array.Clear(Program.korzina, 0, Program.korzina.Length);
+            Array.Resize(ref Program.korzina, 1);
+            dataGridView1.RowCount = 1;
+            dataGridView1[0, 0].Value = "";
+            dataGridView1[1, 0].Value = "";
+            dataGridView1[2, 0].Value = "";
+            dataGridView1[3, 0].Value = "";
+            dataGridView1[4, 0].Value = "";
+
+            MessageBox.Show("Заказ оформлен, номер заказа " + id_allOrder);
+        }
+
+        private void историяЗаказовToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form12 f = new Form12();
+            f.Show();
         }
     }
 }

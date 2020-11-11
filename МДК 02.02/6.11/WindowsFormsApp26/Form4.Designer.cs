@@ -33,6 +33,8 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.categoriesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.restoranDataSet4 = new WindowsFormsApp26.restoranDataSet4();
             this.categoriesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.restoranDataSet = new WindowsFormsApp26.restoranDataSet();
             this.categoriesTableAdapter = new WindowsFormsApp26.restoranDataSetTableAdapters.CategoriesTableAdapter();
@@ -50,16 +52,16 @@
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.button1 = new System.Windows.Forms.Button();
-            this.restoranDataSet4 = new WindowsFormsApp26.restoranDataSet4();
-            this.categoriesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.categoriesTableAdapter1 = new WindowsFormsApp26.restoranDataSet4TableAdapters.CategoriesTableAdapter();
+            this.restoranDataSet1 = new WindowsFormsApp26.restoranDataSet();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.categoriesBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.restoranDataSet4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.categoriesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.restoranDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.restoranDataSet4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.categoriesBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.restoranDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -93,6 +95,16 @@
             this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
             this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
             this.nameDataGridViewTextBoxColumn.Width = 300;
+            // 
+            // categoriesBindingSource1
+            // 
+            this.categoriesBindingSource1.DataMember = "Categories";
+            this.categoriesBindingSource1.DataSource = this.restoranDataSet4;
+            // 
+            // restoranDataSet4
+            // 
+            this.restoranDataSet4.DataSetName = "restoranDataSet4";
+            this.restoranDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // categoriesBindingSource
             // 
@@ -244,19 +256,14 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
-            // restoranDataSet4
-            // 
-            this.restoranDataSet4.DataSetName = "restoranDataSet4";
-            this.restoranDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // categoriesBindingSource1
-            // 
-            this.categoriesBindingSource1.DataMember = "Categories";
-            this.categoriesBindingSource1.DataSource = this.restoranDataSet4;
-            // 
             // categoriesTableAdapter1
             // 
             this.categoriesTableAdapter1.ClearBeforeFill = true;
+            // 
+            // restoranDataSet1
+            // 
+            this.restoranDataSet1.DataSetName = "restoranDataSet";
+            this.restoranDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // Form4
             // 
@@ -270,13 +277,14 @@
             this.Text = "Категории блюд";
             this.Load += new System.EventHandler(this.Form4_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.categoriesBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.restoranDataSet4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.categoriesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.restoranDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
             this.bindingNavigator1.ResumeLayout(false);
             this.bindingNavigator1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.restoranDataSet4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.categoriesBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.restoranDataSet1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -307,5 +315,6 @@
         private restoranDataSet4 restoranDataSet4;
         private System.Windows.Forms.BindingSource categoriesBindingSource1;
         private restoranDataSet4TableAdapters.CategoriesTableAdapter categoriesTableAdapter1;
+        private restoranDataSet restoranDataSet1;
     }
 }

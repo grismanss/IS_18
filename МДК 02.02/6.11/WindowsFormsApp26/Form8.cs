@@ -30,7 +30,7 @@ namespace WindowsFormsApp26
         private void button1_Click(object sender, EventArgs e)
         {
             
-            int id = Convert.ToInt32(label3.Text);
+            int id = Convert.ToInt32(label13.Text);
             int count = Convert.ToInt32(numericUpDown1.Value);
             string name = label2.Text.Trim();
             int price = Convert.ToInt32(label3.Text.Trim());
