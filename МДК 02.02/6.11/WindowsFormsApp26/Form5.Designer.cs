@@ -39,17 +39,18 @@
             this.categoriesIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.photoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dishBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.restoranDataSet5 = new WindowsFormsApp26.restoranDataSet5();
             this.dishBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.restoranDataSet5 = new WindowsFormsApp26.restoranDataSet5();
-            this.dishBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.dishTableAdapter1 = new WindowsFormsApp26.restoranDataSet5TableAdapters.DishTableAdapter();
+            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dishBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.restoranDataSet5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dishBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.restoranDataSet5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dishBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -80,6 +81,7 @@
             this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
             this.idDataGridViewTextBoxColumn.HeaderText = "id";
             this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.ReadOnly = true;
             this.idDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.idDataGridViewTextBoxColumn.Visible = false;
             // 
@@ -139,6 +141,16 @@
             this.Column1.Name = "Column1";
             this.Column1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
+            // dishBindingSource1
+            // 
+            this.dishBindingSource1.DataMember = "Dish";
+            this.dishBindingSource1.DataSource = this.restoranDataSet5;
+            // 
+            // restoranDataSet5
+            // 
+            this.restoranDataSet5.DataSetName = "restoranDataSet5";
+            this.restoranDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(12, 315);
@@ -169,25 +181,26 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.Button3_Click);
             // 
-            // restoranDataSet5
-            // 
-            this.restoranDataSet5.DataSetName = "restoranDataSet5";
-            this.restoranDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // dishBindingSource1
-            // 
-            this.dishBindingSource1.DataMember = "Dish";
-            this.dishBindingSource1.DataSource = this.restoranDataSet5;
-            // 
             // dishTableAdapter1
             // 
             this.dishTableAdapter1.ClearBeforeFill = true;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(734, 397);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(145, 35);
+            this.button4.TabIndex = 4;
+            this.button4.Text = "Экспорт";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(901, 450);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -196,9 +209,9 @@
             this.Text = "Form5";
             this.Load += new System.EventHandler(this.Form5_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dishBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.restoranDataSet5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dishBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.restoranDataSet5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dishBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -222,5 +235,6 @@
         private restoranDataSet5 restoranDataSet5;
         private System.Windows.Forms.BindingSource dishBindingSource1;
         private restoranDataSet5TableAdapters.DishTableAdapter dishTableAdapter1;
+        private System.Windows.Forms.Button button4;
     }
 }

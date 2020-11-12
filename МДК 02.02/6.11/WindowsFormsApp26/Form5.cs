@@ -8,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Excel= Microsoft.Office.Interop.Excel;
+
 
 namespace WindowsFormsApp26
 {
@@ -193,6 +195,48 @@ namespace WindowsFormsApp26
             {
                 MessageBox.Show("Не выбран обьект для удаления");
             }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            // Создаём экземпляр нашего приложения
+            Excel.Application dokument = new Excel.Application();
+
+            Excel.Workbook kniga;
+
+            Excel.Worksheet list;
+
+            kniga = dokument.Workbooks.Add();
+
+            list = kniga.Worksheets.get_Item(1);
+
+            list.Cells[1, 1] = "ID";
+            list.Cells[1, 2] = "Наименование";
+            list.Cells[1, 3] = "Цена";
+            list.Cells[1, 4] = "Калорийность";
+            list.Cells[1, 5] = "Состав";
+            list.Cells[1, 6] = "Вес";
+            list.Cells[1,7] = "Фото";
+            list.Cells[1, 8] = "Категория";
+            for (int i=2; i<dataGridView1.RowCount+2; i++)
+            {
+                for (int j = 1; j < dataGridView1.ColumnCount+1; j++)
+                {
+                    if (j!=7)
+                        if(j>7)
+                            list.Cells[i, j-1] = dataGridView1[j-1,i-2].Value;
+                        else list.Cells[i, j] = dataGridView1[j - 1, i - 2].Value;
+                }
+                    
+            }
+            Excel.Range r = list.Range["A1:H1"];
+            Excel.Borders b = r.Borders;
+            b.LineStyle = Excel.XlLineStyle.xlContinuous;
+
+
+            dokument.Visible = true;
+            dokument.UserControl = true;
+
         }
     }
 }
