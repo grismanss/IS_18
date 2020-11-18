@@ -94,9 +94,9 @@ namespace WindowsFormsApp26
         {
             Form6 f = new Form6();
             f.Text = "Добавление";
-
-            f.categoriesTableAdapter1.Fill
-               (f.restoranDataSet6.Categories);
+            f.categoriesTableAdapter2.Fill(f.restoranDataSet9.Categories);
+        /*    f.categoriesTableAdapter2.Fill
+               (f.restoranDataSet3.Categories);*/
             f.comboBox1.SelectedIndex = 0;
 
             if (f.ShowDialog() == DialogResult.OK)

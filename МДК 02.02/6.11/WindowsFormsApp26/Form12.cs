@@ -59,36 +59,50 @@ namespace WindowsFormsApp26
 
         void LoadData()
         {
-            dataGridView2.RowCount = 1;
-            int k = dataGridView1.CurrentRow.Index;
-            string id_zakaz = "";
-            if (dataGridView1[0, k].Value != null)
+            dataGridView2.RowCount = 0;
+            if (dataGridView1.CurrentRow != null)
             {
-                id_zakaz = dataGridView1[0, k].Value.ToString();
-            }
-            if (id_zakaz.Trim() != "")
-            {
-                string s = "select * from Orders inner join Dish on Orders.DishID = Dish.id " +
-                    "where Orders.AllOrdersID = " + id_zakaz;
-                Program.connect.Open();
-                SqlCommand sql = new SqlCommand(s, Program.connect);
-                SqlDataReader reader = sql.ExecuteReader();
-                while (reader.Read())
+                int k = dataGridView1.CurrentRow.Index;
+                string id_zakaz = "";
+                if (dataGridView1[0, k].Value != null)
                 {
-                    string[] str = new string[5];
-                    str[0] = reader.GetValue(5).ToString().Trim();
-                    str[1] = reader.GetValue(2).ToString().Trim();
-                    str[2] = reader.GetValue(6).ToString().Trim();
-                    str[3] = reader.GetValue(7).ToString().Trim();
-                    str[4] = reader.GetValue(9).ToString().Trim();
-                    dataGridView2.Rows.Add(str);
+                    id_zakaz = dataGridView1[0, k].Value.ToString();
                 }
-                Program.connect.Close();
+                if (id_zakaz.Trim() != "")
+                {
+                    string s = "select * from Orders inner join Dish on Orders.DishID = Dish.id " +
+                        "where Orders.AllOrdersID = " + id_zakaz;
+                    Program.connect.Open();
+                    SqlCommand sql = new SqlCommand(s, Program.connect);
+                    SqlDataReader reader = sql.ExecuteReader();
+                    
+                    while (reader.Read())
+                    {
+                        string[] str = new string[5];
+                        str[0] = reader.GetValue(5).ToString().Trim();
+                        str[1] = reader.GetValue(2).ToString().Trim();
+                        str[2] = reader.GetValue(6).ToString().Trim();
+                        str[3] = reader.GetValue(7).ToString().Trim();
+                        str[4] = reader.GetValue(9).ToString().Trim();
+                        dataGridView2.Rows.Add(str);
+                    }
+                    Program.connect.Close();
+                }
             }
         }
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             LoadData();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

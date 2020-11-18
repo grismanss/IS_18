@@ -20,10 +20,12 @@ namespace WindowsFormsApp26
 
         private void Form6_Load(object sender, EventArgs e)
         {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "restoranDataSet9.Categories". При необходимости она может быть перемещена или удалена.
+            this.categoriesTableAdapter2.Fill(this.restoranDataSet9.Categories);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "restoranDataSet7.Categories". При необходимости она может быть перемещена или удалена.
             //this.categoriesTableAdapter.Fill(this.restoranDataSet7.Categories);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "restoranDataSet6.Categories". При необходимости она может быть перемещена или удалена.
-              this.categoriesTableAdapter1.Fill(this.restoranDataSet6.Categories);
+           // this.categoriesTableAdapter1.Fill(this.restoranDataSet6.Categories);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "restoranDataSet2.Categories". При необходимости она может быть перемещена или удалена.
             /*this.categoriesTableAdapter.Fill
                 (this.restoranDataSet2.Categories);

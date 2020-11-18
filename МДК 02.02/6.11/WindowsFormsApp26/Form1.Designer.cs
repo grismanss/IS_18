@@ -43,7 +43,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(247, 31);
             this.textBox2.TabIndex = 1;
-            this.textBox2.Text = "11";
+            this.textBox2.Text = "22";
             this.textBox2.UseSystemPasswordChar = true;
             // 
             // label1
@@ -101,7 +101,7 @@
             this.maskedTextBox1.Name = "maskedTextBox1";
             this.maskedTextBox1.Size = new System.Drawing.Size(247, 31);
             this.maskedTextBox1.TabIndex = 19;
-            this.maskedTextBox1.Text = "1111111111";
+            this.maskedTextBox1.Text = "2222222222";
             // 
             // Form1
             // 

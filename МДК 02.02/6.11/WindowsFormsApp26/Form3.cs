@@ -35,5 +35,11 @@ namespace WindowsFormsApp26
         {
 
         }
+
+        private void работаСПользователямиToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form13 f = new Form13();
+                f.Show();
+        }
     }
 }

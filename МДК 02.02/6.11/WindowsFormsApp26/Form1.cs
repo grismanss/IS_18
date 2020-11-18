@@ -73,6 +73,7 @@ namespace WindowsFormsApp26
             {
                 MessageBox.Show("Неверный логин или пароль");
                 maskedTextBox1.Focus();
+                Program.connect.Close();
             }
             else
             {

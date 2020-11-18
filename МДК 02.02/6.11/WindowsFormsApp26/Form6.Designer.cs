@@ -40,6 +40,8 @@
             this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
             this.label4 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.categoriesBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.restoranDataSet7 = new WindowsFormsApp26.restoranDataSet7();
             this.categoriesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label6 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -52,18 +54,21 @@
             this.restoranDataSet6 = new WindowsFormsApp26.restoranDataSet6();
             this.categoriesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.categoriesTableAdapter1 = new WindowsFormsApp26.restoranDataSet6TableAdapters.CategoriesTableAdapter();
-            this.restoranDataSet7 = new WindowsFormsApp26.restoranDataSet7();
-            this.categoriesBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.categoriesTableAdapter = new WindowsFormsApp26.restoranDataSet7TableAdapters.CategoriesTableAdapter();
+            this.restoranDataSet9 = new WindowsFormsApp26.restoranDataSet9();
+            this.categoriesBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.categoriesTableAdapter2 = new WindowsFormsApp26.restoranDataSet9TableAdapters.CategoriesTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.categoriesBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.restoranDataSet7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.categoriesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.restoranDataSet6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.categoriesBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.restoranDataSet7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.categoriesBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.restoranDataSet9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.categoriesBindingSource3)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox1
@@ -159,7 +164,7 @@
             // 
             // comboBox1
             // 
-            this.comboBox1.DataSource = this.categoriesBindingSource2;
+            this.comboBox1.DataSource = this.categoriesBindingSource3;
             this.comboBox1.DisplayMember = "Name";
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(15, 433);
@@ -168,6 +173,16 @@
             this.comboBox1.TabIndex = 10;
             this.comboBox1.ValueMember = "id";
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.ComboBox1_SelectedIndexChanged);
+            // 
+            // categoriesBindingSource2
+            // 
+            this.categoriesBindingSource2.DataMember = "Categories";
+            this.categoriesBindingSource2.DataSource = this.restoranDataSet7;
+            // 
+            // restoranDataSet7
+            // 
+            this.restoranDataSet7.DataSetName = "restoranDataSet7";
+            this.restoranDataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label6
             // 
@@ -258,19 +273,23 @@
             // 
             this.categoriesTableAdapter1.ClearBeforeFill = true;
             // 
-            // restoranDataSet7
-            // 
-            this.restoranDataSet7.DataSetName = "restoranDataSet7";
-            this.restoranDataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // categoriesBindingSource2
-            // 
-            this.categoriesBindingSource2.DataMember = "Categories";
-            this.categoriesBindingSource2.DataSource = this.restoranDataSet7;
-            // 
             // categoriesTableAdapter
             // 
             this.categoriesTableAdapter.ClearBeforeFill = true;
+            // 
+            // restoranDataSet9
+            // 
+            this.restoranDataSet9.DataSetName = "restoranDataSet9";
+            this.restoranDataSet9.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // categoriesBindingSource3
+            // 
+            this.categoriesBindingSource3.DataMember = "Categories";
+            this.categoriesBindingSource3.DataSource = this.restoranDataSet9;
+            // 
+            // categoriesTableAdapter2
+            // 
+            this.categoriesTableAdapter2.ClearBeforeFill = true;
             // 
             // Form6
             // 
@@ -306,12 +325,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.categoriesBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.restoranDataSet7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.categoriesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.restoranDataSet6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.categoriesBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.restoranDataSet7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.categoriesBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.restoranDataSet9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.categoriesBindingSource3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -345,5 +366,8 @@
         public restoranDataSet7 restoranDataSet7;
         public System.Windows.Forms.BindingSource categoriesBindingSource2;
         public restoranDataSet7TableAdapters.CategoriesTableAdapter categoriesTableAdapter;
+        public restoranDataSet9 restoranDataSet9;
+        public System.Windows.Forms.BindingSource categoriesBindingSource3;
+        public restoranDataSet9TableAdapters.CategoriesTableAdapter categoriesTableAdapter2;
     }
 }

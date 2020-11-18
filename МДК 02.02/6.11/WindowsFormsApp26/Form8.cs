@@ -42,5 +42,10 @@ namespace WindowsFormsApp26
             MessageBox.Show("Добавление в корзину произведено");
             this.Close();
         }
+
+        private void Form8_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
