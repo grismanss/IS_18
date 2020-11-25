@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace WindowsFormsApp26
 {
     public partial class Form4 : Form
@@ -43,6 +44,16 @@ namespace WindowsFormsApp26
         }
 
         private void categoriesBindingSource_CurrentChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void button2_Click(object sender, EventArgs e)
         {
 
         }

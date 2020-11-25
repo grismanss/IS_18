@@ -68,3 +68,6 @@ C:\Users\Homi\Desktop\IS_18\МДК 02.02\6.11\WindowsFormsApp26\bin\Debug\Window
 C:\Users\Homi\Desktop\IS_18\МДК 02.02\6.11\WindowsFormsApp26\obj\Debug\WindowsFormsApp26.Form12.resources
 C:\Users\Homi\Desktop\IS_18\МДК 02.02\6.11\WindowsFormsApp26\obj\Debug\WindowsFormsApp26.csproj.ResolveComReference.cache
 C:\Users\Homi\Desktop\IS_18\МДК 02.02\6.11\WindowsFormsApp26\obj\Debug\WindowsFormsApp26.Form13.resources
+C:\Users\Homi\Desktop\IS_18\МДК 02.02\6.11\WindowsFormsApp26\obj\Debug\WindowsFormsApp26.Form14.resources
+C:\Users\Homi\Desktop\IS_18\МДК 02.02\6.11\WindowsFormsApp26\bin\Debug\itextsharp.dll
+C:\Users\Homi\Desktop\IS_18\МДК 02.02\6.11\WindowsFormsApp26\obj\Debug\WindowsFormsApp26.csproj.CopyComplete
