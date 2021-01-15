@@ -1,0 +1,87 @@
+body{
+    background-color: wheat;
+  /*  background-image: url('../img/fon.jpg');
+    background-repeat: repeat;
+    background-attachment:scroll;
+    background-position: bottom;
+    background-size: 100%;*/
+}
+
+h1{
+    text-align: center;
+}
+
+p.date{
+    text-align: right;
+}
+
+p.main{
+    text-align: justify;
+}
+
+h1 {
+    text-decoration:overline ;
+}
+
+h2 {
+    text-decoration:line-through;
+}
+h3 {
+    text-decoration:underline;
+}
+
+h4 {
+    text-decoration:blink;
+}
+
+p.uppercase {
+    text-transform:uppercase;
+    font-style: italic;/*курсив*/
+}
+
+p.lowercase {
+    text-transform:lowercase;
+   
+}
+
+p.capitalize {
+    text-transform:capitalize;
+}
+
+.intal{
+    font-style: italic;/*курсив*/
+    font-family: Georgia, 
+    'Times New Roman', Times, 
+    serif;
+}
+/*Подключение шрифта из файла*/
+@font-face {
+    font-family: Konstanting; /* Гарнитура шрифта */
+    src: url("../font/20179.ttf"); /* Путь к файлу со шрифтом */
+}
+
+h1 {
+    font-family: Konstanting;
+}
+
+
+#my_div{
+    background-color: tomato;
+    width: 50%;/*ширина блока*/
+    border-width: 10px ;
+    border-color: teal;
+    border-style: solid;
+
+    border-bottom: 20px yellow dotted;
+
+    border-radius: 10%;
+    margin: auto;
+    padding: 100px;
+
+}
+
+
+
+
+
+
