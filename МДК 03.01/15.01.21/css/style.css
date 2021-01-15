@@ -1,0 +1,26 @@
+h1{
+    /*задаем цвет надписи h1*/
+    color:rosybrown;
+}
+
+h4{
+    color:seagreen;
+    font-size: 25pt;/*размер шрифта*/
+}
+
+/*Обращение к селектору по классу*/
+.myclass{
+    color:red;
+}
+
+#myid{
+    color:yellow;
+}
+
+.myclass2{
+    font-size: 40pt;/*размер шрифта*/
+}
+
+.myclass3{
+    color:springgreen;
+}
