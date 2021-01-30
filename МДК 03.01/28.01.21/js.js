@@ -82,11 +82,16 @@ let h1=50;
 
 function draw(){
     cotext2.fillStyle="yellow";
-    cotext2.fillRect(x1,y1,h1,h1);
+   // cotext2.fillRect(x1,y1,h1,h1);
+    cotext2.beginPath();
+    cotext2.arc(x1, y1, 50, 0, 2*Math.PI, false);
+    cotext2.stroke()
+    cotext2.fillStyle = "#333333";
+    cotext2.fill();
 }
 draw();
 function clear(){
-    cotext2.clearRect(x1,y1,h1,h1);
+    cotext2.clearRect(x1-50-1,y1-50-1,2*h1+1,2*h1+1);
 }
 function move_top(){
     clear();
