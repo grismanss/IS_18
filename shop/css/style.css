@@ -1,3 +1,22 @@
 .my_logo{
     width: 5%;
 }
+
+.my_message{
+    color: red;
+}
+
+#message_registration {
+    display: none;
+}
+
+#message_registration2 {
+    display: none;
+ }
+ #message_autorization {
+    display: none;
+ }
+
+ #authorized{
+    display: none;
+ }

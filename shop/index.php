@@ -1,81 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Магазин бытовой техники</title>
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
-
-    
-
-<!-- Bootstrap core CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-
-<style>
-  .bd-placeholder-img {
-    font-size: 1.125rem;
-    text-anchor: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-  }
-
-  @media (min-width: 768px) {
-    .bd-placeholder-img-lg {
-      font-size: 3.5rem;
-    }
-  }
-</style>
-
-
-<!-- Custom styles for this template -->
-<link href="css/carousel.css" rel="stylesheet">
-<link href="css/style.css" rel="stylesheet">
-</head>
-<body>
-<header>
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img class="my_logo" src="img/logo.png">Бытовая техника</a>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Поиск</button>
-        </form>
-      </div>
-    </div>
-  </nav>
-  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-    <div class="container-fluid">
-       <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav me-auto mb-2 mb-md-0">
-          <li class="nav-item active">
-            <a class="nav-link" aria-current="page" href="#">Каталог</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Смартфоны</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="#" >Техника для дома</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Красота и здоровье</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Прочее</a>
-          </li>
-        </ul>
-        <div>
-          <a class="navbar-brand" href="#">Авторизация</a>
-          <a class="navbar-brand" href="#">Регистрация</a>
-        </div>
-        </div>
-    </div>
-  </nav>
-</header>
+<?php
+include("header.php");
+?>
 <main>
 
+
+<?php
+include("connect.php");
+$s="select * from stock ORDER by `data1` DESC";
+$q=mysqli_query($link, $s);
+$mas=["img"=>[],
+      "title"=>[],
+      "description"=>[]
+];
+for ($i=0; $i<3; $i++){
+  $row=mysqli_fetch_array($q);
+  $mas['img'][$i]=$row[5];
+  $mas['title'][$i]=$row[1];
+  $mas['description'][$i]=$row[2];
+}
+
+?>
   <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
     <ol class="carousel-indicators">
       <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
@@ -84,35 +28,40 @@
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/>
+        <img src="img/stock/<?=$mas['img'][0];?>">
+        
+        </svg>
 
         <div class="container">
           <div class="carousel-caption text-start">
-            <h1>Example headline.</h1>
-            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-            <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+            <h1><?=$mas['title'][0];?></h1>
+            <p><?=$mas['description'][0];?></p>
+          
           </div>
         </div>
       </div>
       <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/>
+        <img src="img/stock/<?=$mas['img'][1];?>"></svg>
 
         <div class="container">
           <div class="carousel-caption">
-            <h1>Another example headline.</h1>
-            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-            <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+            <h1><?=$mas['title'][1];?></h1>
+            <p><?=$mas['description'][1];?></p>
+            
           </div>
         </div>
       </div>
       <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/>
+        <img src="img/stock/<?=$mas['img'][2];?>"></svg>
 
         <div class="container">
           <div class="carousel-caption text-end">
-            <h1>One more for good measure.</h1>
-            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-            <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+            <h1><?=$mas['title'][2];?></h1>
+            <p><?=$mas['description'][2];?></p>
+            
           </div>
         </div>
       </div>
@@ -126,7 +75,102 @@
       <span class="visually-hidden">Next</span>
     </a>
   </div>
-</main>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-</body>
-</html>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Авторизация</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form >
+          <div class="alert alert-danger" role="alert" id="message_autorization">
+          </div>
+          <label class="form-check-label">Логин</label>
+          <input type="text" id="login" class="form-control">
+          <label class="form-check-label">Пароль</label>
+          <input type="password" id="pass" class="form-control">
+          <br>
+          <input type="button" class="btn btn-primary" value="Авторизоваться" id="sub_autorization">
+        </form>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal2 -->
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Регистрация</h5>
+        <button type="button"  data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form onsubmit="return false;">
+          <p class="my_message" id="message_registration"></p>
+
+          <div class="alert alert-danger" role="alert" id="message_registration2">
+          </div>
+          <label class="form-check-label">Фамилия</label>
+          <input type="text" id="last_name" class="form-control" required>
+          <label class="form-check-label">Имя</label>
+          <input type="text" id="first_name" class="form-control" required>   
+          <label class="form-check-label">Отчество</label>
+          <input type="text" id="patronymic" class="form-control"> 
+          <label class="form-check-label">Телефон</label>
+          <input type="text" id="phone" class="form-control"> 
+          <label class="form-check-label">email</label>
+          <input type="text"  id="email" class="form-control"> 
+          <label class="form-check-label">Пароль</label>
+          <input type="password"  id ="pass1" class="form-control" required> 
+          <label class="form-check-label">Подтверждение пароля</label>
+          <input type="password"  id="pass2"  class="form-control" required> 
+          <label class="form-check-label">Дата рождения</label>
+          <input type="date" id="date_of_brith" class="form-control" required>
+          <label class="form-check-label">Пол</label> 
+          <select id="sex" class="form-select" aria-label="Default select example">
+            <option value="1" selected>М</option> 
+            <option value="0">Ж</option>            
+          </select>
+          <br>
+          <input type="submit" class="btn btn-primary" value="Зарегистрироваться" id="submit_registration">     
+        </form>
+      </div>
+     
+    </div>
+  </div>
+</div>
+
+<div class="container marketing">
+
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+            <h2>Heading</h2>
+            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+            <h2>Heading</h2>
+            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+            <h2>Heading</h2>
+            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+
+
+<?php
+include("footer.php");
+?>
