@@ -2,7 +2,7 @@
 include("header.php");
 ?>
 <main>
-
+ПРИВЕТ МИР!!!
 
 <?php
 include("connect.php");
